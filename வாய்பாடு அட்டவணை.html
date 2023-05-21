@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Mitiplay table</title>
+</head>
+<body>
+
+
+    <style>
+        *{
+           margin: 0;
+           box-sizing: border-box;}
+        body{
+           height: 100vh;
+           width: 100%;
+             background: -moz-linear-gradient(55deg,rgb(0, 255, 115),rgb(212, 0, 255));}
+        body::selection{background-color: #000; color:white;}
+        h1{position: fixed; bottom: 0; text-align: center; background-color: black;  color:white;margin-left: 40%;}
+        h1::selection{background-color: blue; }
+        i{background-color: lime; color:white;}
+        i::selection{background-color: rgb(96, 96, 253);color: #000;}
+        
+    </style>
+
+    <h1><i>Tharanan</i>&copy;</h1>
+
+    <script>
+
+        let a=window.prompt('வாய்பாட்டிற்குரிய எண்:--');
+        let b=window.prompt('வாய்பாடு'+a+'எத்தனை எண் வரை வர வேண்டும்:--');
+
+           let n=1;
+           for(n=1; n<=b; n++){
+            document.write('</br>');
+        let d=(a*n);
+         document.write(n+'x'+a+'=' +d);}
+        
+    </script>
+    
+</body>
+</html>
